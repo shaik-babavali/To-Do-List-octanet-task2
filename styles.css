@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(117, 129, 255, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #dadeff;
+}
+
+#taskInput {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background: #f4f4f4;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.complete, .delete {
+    background: transparent;
+    border: none;
+    color: #fff;
+    width: 80px; /* Fixed width for both buttons */
+    height: 30px; /* Fixed height for both buttons */
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.complete {
+    background: #007bff;
+    right: 90px; /* Adjust distance from the right side */
+}
+
+.delete {
+    background: #dc3545;
+    right: 10px; /* Adjust distance from the right side */
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.selected {
+    background: #d3d3d3; /* Highlight the selected task */
+}
